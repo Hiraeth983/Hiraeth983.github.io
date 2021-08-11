@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hiraeth.</title>
+  
+  <subtitle>记录生活中的点点滴滴</subtitle>
+  <link href="http://hiraeth.com.cn/atom.xml" rel="self"/>
+  
+  <link href="http://hiraeth.com.cn/"/>
+  <updated>2021-08-11T14:16:09.638Z</updated>
+  <id>http://hiraeth.com.cn/</id>
+  
+  <author>
+    <name>Hiraeth</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Day01 搭建博客心得</title>
+    <link href="http://hiraeth.com.cn/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/"/>
+    <id>http://hiraeth.com.cn/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/</id>
+    <published>2021-08-11T04:21:45.000Z</published>
+    <updated>2021-08-11T14:16:09.638Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、注册GitHub账号"><a href="#一、注册GitHub账号" class="headerlink" title="一、注册GitHub账号"></a>一、注册GitHub账号</h1><p>进入<a href="https://github.com/">GitHub</a>官网</p><p>git config –global http.sslVerify “false”</p><p>git config –global http.postBuffer 524288000</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure><h1 id="二、安装Git用以远程控制仓库"><a href="#二、安装Git用以远程控制仓库" class="headerlink" title="二、安装Git用以远程控制仓库"></a>二、安装Git用以远程控制仓库</h1><p>进入<a href="https://git-scm.com/">Git官网</a>，点击 <em><strong>Downloads</strong></em> 下载：</p><p><img src="Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811154414977.png" alt="image-20210811154414977"></p><p>根据用户所使用操作系统选择，我选择的是Windows：</p><p><img src="Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811154441928.png" alt="image-20210811154441928"></p><p>点击之后会自动下载，如果没有自动下载请自行选择进行下载：</p><p><img src="Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811154545763.png" alt="image-20210811154545763"></p><p>下载之后双击运行exe程序，选择相应的配置安装即可。</p><p>详细安装步骤可参考链接：<a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">https://www.cnblogs.com/xueweisuoyong/p/11914045.html</a></p><p>安装成功后，选中任意文件夹鼠标右键单击，出现以下情况则安装成功：</p><img src="Day01-搭建博客心得/image-20210811155107280.png" alt="image-20210811155107280" style="zoom:10%;" /><p>打开Git Bash，输入指令git：</p><p><img src="Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811155514217.png" alt="image-20210811155514217"></p><p>回车获得以下反馈：</p><p><img src="Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811155552115.png" alt="image-20210811155552115"></p><p>此时你的Git已经安装完成了！</p><h1 id="三、绑定GitHub并提交文件"><a href="#三、绑定GitHub并提交文件" class="headerlink" title="三、绑定GitHub并提交文件"></a>三、绑定GitHub并提交文件</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;一、注册GitHub账号&quot;&gt;&lt;a href=&quot;#一、注册GitHub账号&quot; class=&quot;headerlink&quot; title=&quot;一、注册GitHub账号&quot;&gt;&lt;/a&gt;一、注册GitHub账号&lt;/h1&gt;&lt;p&gt;进入&lt;a href=&quot;https://github.com/</summary>
+      
+    
+    
+    
+    <category term="搭建博客" scheme="http://hiraeth.com.cn/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="日常" scheme="http://hiraeth.com.cn/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="步骤" scheme="http://hiraeth.com.cn/tags/%E6%AD%A5%E9%AA%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://hiraeth.com.cn/2021/08/11/hello-world/"/>
+    <id>http://hiraeth.com.cn/2021/08/11/hello-world/</id>
+    <published>2021-08-11T01:51:27.230Z</published>
+    <updated>2021-08-11T04:01:22.092Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
