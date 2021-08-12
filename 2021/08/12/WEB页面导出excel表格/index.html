@@ -22,27 +22,20 @@
     var CONFIG = {"hostname":"hiraeth.com.cn","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="前言 搭建博客的一般步骤，更新中~~">
+  <meta name="description" content="前言 近期涉及到WEB页面导出excel表格等相关内容，借此整理一下：导出excel表格可以在前端对table中的内容通过js进行导出，在后台的话可以通过java代码进行导出。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Day01 搭建博客心得">
-<meta property="og:url" content="http://hiraeth.com.cn/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/index.html">
+<meta property="og:title" content="WEB页面导出excel表格">
+<meta property="og:url" content="http://hiraeth.com.cn/2021/08/12/WEB%E9%A1%B5%E9%9D%A2%E5%AF%BC%E5%87%BAexcel%E8%A1%A8%E6%A0%BC/index.html">
 <meta property="og:site_name" content="Hiraeth.">
-<meta property="og:description" content="前言 搭建博客的一般步骤，更新中~~">
+<meta property="og:description" content="前言 近期涉及到WEB页面导出excel表格等相关内容，借此整理一下：导出excel表格可以在前端对table中的内容通过js进行导出，在后台的话可以通过java代码进行导出。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://hiraeth.com.cn/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811154414977.png">
-<meta property="og:image" content="http://hiraeth.com.cn/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811154441928.png">
-<meta property="og:image" content="http://hiraeth.com.cn/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811154545763.png">
-<meta property="og:image" content="http://hiraeth.com.cn/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811155107280.png">
-<meta property="og:image" content="http://hiraeth.com.cn/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811155514217.png">
-<meta property="og:image" content="http://hiraeth.com.cn/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811155552115.png">
-<meta property="article:published_time" content="2021-08-11T04:21:45.000Z">
-<meta property="article:modified_time" content="2021-08-12T15:18:57.326Z">
+<meta property="article:published_time" content="2021-08-12T14:20:35.000Z">
+<meta property="article:modified_time" content="2021-08-12T15:16:08.389Z">
 <meta property="article:author" content="Hiraeth">
-<meta property="article:tag" content="博客">
+<meta property="article:tag" content="Web">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://hiraeth.com.cn/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811154414977.png">
 
-<link rel="canonical" href="http://hiraeth.com.cn/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/">
+<link rel="canonical" href="http://hiraeth.com.cn/2021/08/12/WEB%E9%A1%B5%E9%9D%A2%E5%AF%BC%E5%87%BAexcel%E8%A1%A8%E6%A0%BC/">
 
 
 <script id="page-configurations">
@@ -55,7 +48,7 @@
   };
 </script>
 
-  <title>Day01 搭建博客心得 | Hiraeth.</title>
+  <title>WEB页面导出excel表格 | Hiraeth.</title>
   
 
 
@@ -211,7 +204,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://hiraeth.com.cn/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/">
+    <link itemprop="mainEntityOfPage" href="http://hiraeth.com.cn/2021/08/12/WEB%E9%A1%B5%E9%9D%A2%E5%AF%BC%E5%87%BAexcel%E8%A1%A8%E6%A0%BC/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -224,38 +217,28 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Day01 搭建博客心得
+          WEB页面导出excel表格
         </h1>
 
         <div class="post-meta">
 
-          
-            <i class="fa fa-thumb-tack"></i>
-            <font color=7D26CD>置顶</font>
-             <span class="post-meta-divider">|</span>
           
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-08-11 12:21:45" itemprop="dateCreated datePublished" datetime="2021-08-11T12:21:45+08:00">2021-08-11</time>
+              <time title="创建时间：2021-08-12 22:20:35 / 修改时间：23:16:08" itemprop="dateCreated datePublished" datetime="2021-08-12T22:20:35+08:00">2021-08-12</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-12 23:18:57" itemprop="dateModified" datetime="2021-08-12T23:18:57+08:00">2021-08-12</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">搭建博客</span></a>
+                  <a href="/categories/%E5%BA%94%E7%94%A8/" itemprop="url" rel="index"><span itemprop="name">应用</span></a>
                 </span>
             </span>
 
@@ -278,30 +261,23 @@
 
       
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>搭建博客的一般步骤，更新中~~</p>
+<p>近期涉及到WEB页面导出excel表格等相关内容，借此整理一下：导出excel表格可以在前端对table中的内容通过js进行导出，在后台的话可以通过java代码进行导出。</p>
 </blockquote>
  <span id="more"></span>
 
-<h1 id="一、注册GitHub账号"><a href="#一、注册GitHub账号" class="headerlink" title="一、注册GitHub账号"></a>一、注册GitHub账号</h1><p>进入<a target="_blank" rel="noopener" href="https://github.com/">GitHub</a>官网</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// hexo部署出现错误时解决方案：</span><br><span class="line">git config --global http.sslVerify &quot;false&quot;</span><br><span class="line"></span><br><span class="line">git config --global http.postBuffer 524288000</span><br></pre></td></tr></table></figure>
+<h1 id="一、前端页面对table内容导出"><a href="#一、前端页面对table内容导出" class="headerlink" title="一、前端页面对table内容导出"></a>一、前端页面对table内容导出</h1><ul>
+<li>使用jquery-table2excel插件（获取最新版本的地址为:<a target="_blank" rel="noopener" href="https://github.com/rainabba/jquery-table2excel%EF%BC%89">https://github.com/rainabba/jquery-table2excel）</a></li>
+<li>附加jquery插件（获取地址为：<a target="_blank" rel="noopener" href="https://jquery.com/download/%EF%BC%89">https://jquery.com/download/）</a></li>
+</ul>
+<p>附加一段示例源码：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;http://code.jquery.com/jquery-latest.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 此处需要自行下载并导入对应插件 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;plugins/bootstrap/js/jquery.table2excel.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">table</span> <span class="attr">class</span>=<span class="string">&quot;table2excel&quot;</span> <span class="attr">border</span>=<span class="string">&quot;1&quot;</span> <span class="attr">cellspacing</span>=<span class="string">&quot;0&quot;</span> <span class="attr">width</span>=<span class="string">&quot;100%&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">thead</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">th</span>&gt;</span>车牌<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">th</span>&gt;</span>检测日期<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">th</span>&gt;</span>检测站点<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">th</span> <span class="attr">class</span>=<span class="string">&quot;noExl&quot;</span>&gt;</span>（不导出）<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>浙A A786E<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>2020-09-27<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>site01<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>（不导出）<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">&quot;btn&quot;</span>&gt;</span>导出excel表格<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript"></span></span><br><span class="line"><span class="javascript">        $(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            $(<span class="string">&quot;.btn&quot;</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                $(<span class="string">&quot;.table2excel&quot;</span>).table2excel(&#123;</span></span><br><span class="line"><span class="javascript">                    <span class="comment">// 不被导出的表格行的CSS class类</span></span></span><br><span class="line"><span class="javascript">                    <span class="attr">exclude</span>: <span class="string">&quot;.noExl&quot;</span>,</span></span><br><span class="line"><span class="javascript">                    <span class="comment">// 可添加多个CSS class类</span></span></span><br><span class="line"><span class="javascript">                    <span class="attr">exclude</span>: <span class="string">&quot;.other&quot;</span>,</span></span><br><span class="line"><span class="javascript">                    <span class="comment">// 导出的Excel文档的名称</span></span></span><br><span class="line"><span class="javascript">                    <span class="attr">name</span>: <span class="string">&quot;Excel Document Name&quot;</span>,</span></span><br><span class="line"><span class="javascript">                    <span class="comment">// Excel文件的名称</span></span></span><br><span class="line"><span class="javascript">                    <span class="attr">filename</span>: <span class="string">&quot;test&quot;</span>,</span></span><br><span class="line"><span class="javascript">                    <span class="comment">//文件后缀名</span></span></span><br><span class="line"><span class="javascript">                    <span class="attr">fileext</span>: <span class="string">&quot;.xls&quot;</span>,</span></span><br><span class="line"><span class="javascript">                    <span class="comment">//是否排除导出图片</span></span></span><br><span class="line"><span class="javascript">                    <span class="attr">exclude_img</span>: <span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">                    <span class="comment">//是否排除导出超链接</span></span></span><br><span class="line"><span class="javascript">                    <span class="attr">exclude_links</span>: <span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">                    <span class="comment">//是否排除导出输入框中的内容</span></span></span><br><span class="line"><span class="javascript">                    <span class="attr">exclude_inputs</span>: <span class="literal">false</span></span></span><br><span class="line"><span class="javascript">                &#125;);</span></span><br><span class="line"><span class="javascript">            &#125;);</span></span><br><span class="line"><span class="javascript">        &#125;);</span></span><br><span class="line"><span class="javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h1 id="二、安装Git用以远程控制仓库"><a href="#二、安装Git用以远程控制仓库" class="headerlink" title="二、安装Git用以远程控制仓库"></a>二、安装Git用以远程控制仓库</h1><p>进入<a target="_blank" rel="noopener" href="https://git-scm.com/">Git官网</a>，点击 <em><strong>Downloads</strong></em> 下载：</p>
-<p><img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811154414977.png" alt="image-20210811154414977"></p>
-<p>根据用户所使用操作系统选择，我选择的是Windows：</p>
-<p><img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811154441928.png" alt="image-20210811154441928"></p>
-<p>点击之后会自动下载，如果没有自动下载请自行选择进行下载：</p>
-<p><img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811154545763.png" alt="image-20210811154545763"></p>
-<p>下载之后双击运行exe程序，选择相应的配置安装即可。</p>
-<p>详细安装步骤可参考链接：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">https://www.cnblogs.com/xueweisuoyong/p/11914045.html</a></p>
-<p>安装成功后，选中任意文件夹鼠标右键单击，出现以下情况则安装成功：</p>
-<img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811155107280.png" alt="image-20210811155107280" style="zoom:10%;">
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">插件配置参数解释：</span><br><span class="line">　　//exclude：不被导出的表格行的CSS class类。</span><br><span class="line">　　//name：导出的Excel文档的名称。</span><br><span class="line">　　//filename：Excel文件的名称。</span><br><span class="line">　　//exclude_img：是否导出图片。</span><br><span class="line">　　//exclude_links：是否导出超链接</span><br><span class="line">　　//exclude_inputs：是否导出输入框中的内容。</span><br></pre></td></tr></table></figure>
 
-<p>打开Git Bash，输入指令git：</p>
-<p><img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811155514217.png" alt="image-20210811155514217"></p>
-<p>回车获得以下反馈：</p>
-<p><img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811155552115.png" alt="image-20210811155552115"></p>
-<p>此时你的Git已经安装完成了！</p>
-<h1 id="三、绑定GitHub并提交文件"><a href="#三、绑定GitHub并提交文件" class="headerlink" title="三、绑定GitHub并提交文件"></a>三、绑定GitHub并提交文件</h1><p>（未完成，待补充~~~~）</p>
+
+
+<h1 id="二、后端java导出为excel文档"><a href="#二、后端java导出为excel文档" class="headerlink" title="二、后端java导出为excel文档"></a>二、后端java导出为excel文档</h1><p>（未完成，待补充~~~~）</p>
+<h1 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h1><p>博客：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/newbest/p/9973593.html">https://www.cnblogs.com/newbest/p/9973593.html</a></p>
 
     </div>
 
@@ -324,7 +300,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://hiraeth.com.cn/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/" title="Day01 搭建博客心得">http://hiraeth.com.cn/2021/08/11/Day01-搭建博客心得/</a>
+    <a href="http://hiraeth.com.cn/2021/08/12/WEB%E9%A1%B5%E9%9D%A2%E5%AF%BC%E5%87%BAexcel%E8%A1%A8%E6%A0%BC/" title="WEB页面导出excel表格">http://hiraeth.com.cn/2021/08/12/WEB页面导出excel表格/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -354,7 +330,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"><i class="fa fa-tag"></i> 博客</a>
+              <a href="/tags/Web/" rel="tag"><i class="fa fa-tag"></i> Web</a>
           </div>
 
         
@@ -363,13 +339,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/08/11/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
+    <a href="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/" rel="prev" title="Day01 搭建博客心得">
+      <i class="fa fa-chevron-left"></i> Day01 搭建博客心得
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/08/12/WEB%E9%A1%B5%E9%9D%A2%E5%AF%BC%E5%87%BAexcel%E8%A1%A8%E6%A0%BC/" rel="next" title="WEB页面导出excel表格">
-      WEB页面导出excel表格 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -428,7 +401,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%B3%A8%E5%86%8CGitHub%E8%B4%A6%E5%8F%B7"><span class="nav-number">2.</span> <span class="nav-text">一、注册GitHub账号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%AE%89%E8%A3%85Git%E7%94%A8%E4%BB%A5%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6%E4%BB%93%E5%BA%93"><span class="nav-number">3.</span> <span class="nav-text">二、安装Git用以远程控制仓库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E7%BB%91%E5%AE%9AGitHub%E5%B9%B6%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">三、绑定GitHub并提交文件</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%89%8D%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%AF%B9table%E5%86%85%E5%AE%B9%E5%AF%BC%E5%87%BA"><span class="nav-number">2.</span> <span class="nav-text">一、前端页面对table内容导出</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%90%8E%E7%AB%AFjava%E5%AF%BC%E5%87%BA%E4%B8%BAexcel%E6%96%87%E6%A1%A3"><span class="nav-number">3.</span> <span class="nav-text">二、后端java导出为excel文档</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E5%8D%9A%E5%AE%A2"><span class="nav-number">4.</span> <span class="nav-text">参考博客</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
