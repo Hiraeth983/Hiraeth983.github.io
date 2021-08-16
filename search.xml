@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Day01 搭建博客心得</title>
+    <url>/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>搭建博客的一般步骤，更新中~~</p>
+</blockquote>
+ <span id="more"></span>
+
+<h1 id="注册GitHub账号"><a href="#注册GitHub账号" class="headerlink" title="注册GitHub账号"></a>注册GitHub账号</h1><p>进入<a href="https://github.com/">GitHub</a>官网</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// hexo部署出现错误时解决方案：</span><br><span class="line">git config --global http.sslVerify &quot;false&quot;</span><br><span class="line"></span><br><span class="line">git config --global http.postBuffer 524288000</span><br></pre></td></tr></table></figure>
+
+<h1 id="安装Git用以远程控制仓库"><a href="#安装Git用以远程控制仓库" class="headerlink" title="安装Git用以远程控制仓库"></a>安装Git用以远程控制仓库</h1><p>进入<a href="https://git-scm.com/">Git官网</a>，点击 <em><strong>Downloads</strong></em> 下载：</p>
+<p><img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811154414977.png" alt="image-20210811154414977"></p>
+<p>根据用户所使用操作系统选择，我选择的是Windows：</p>
+<p><img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811154441928.png" alt="image-20210811154441928"></p>
+<p>点击之后会自动下载，如果没有自动下载请自行选择进行下载：</p>
+<p><img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811154545763.png" alt="image-20210811154545763"></p>
+<p>下载之后双击运行exe程序，选择相应的配置安装即可。</p>
+<p>详细安装步骤可参考链接：<a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">https://www.cnblogs.com/xueweisuoyong/p/11914045.html</a></p>
+<p>安装成功后，选中任意文件夹鼠标右键单击，出现以下情况则安装成功：</p>
+<img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811155107280.png" alt="image-20210811155107280" style="zoom:10%;">
+
+<p>打开Git Bash，输入指令git：</p>
+<p><img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811155514217.png" alt="image-20210811155514217"></p>
+<p>回车获得以下反馈：</p>
+<p><img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811155552115.png" alt="image-20210811155552115"></p>
+<p>此时你的Git已经安装完成了！</p>
+<h1 id="绑定GitHub并提交文件"><a href="#绑定GitHub并提交文件" class="headerlink" title="绑定GitHub并提交文件"></a>绑定GitHub并提交文件</h1><p>（未完成，待补充~~~~）</p>
+]]></content>
+      <categories>
+        <category>搭建博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>WEB页面导出excel表格</title>
     <url>/2021/08/12/WEB%E9%A1%B5%E9%9D%A2%E5%AF%BC%E5%87%BAexcel%E8%A1%A8%E6%A0%BC/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
@@ -48,42 +84,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Day01 搭建博客心得</title>
-    <url>/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>搭建博客的一般步骤，更新中~~</p>
-</blockquote>
- <span id="more"></span>
-
-<h1 id="注册GitHub账号"><a href="#注册GitHub账号" class="headerlink" title="注册GitHub账号"></a>注册GitHub账号</h1><p>进入<a href="https://github.com/">GitHub</a>官网</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// hexo部署出现错误时解决方案：</span><br><span class="line">git config --global http.sslVerify &quot;false&quot;</span><br><span class="line"></span><br><span class="line">git config --global http.postBuffer 524288000</span><br></pre></td></tr></table></figure>
-
-<h1 id="安装Git用以远程控制仓库"><a href="#安装Git用以远程控制仓库" class="headerlink" title="安装Git用以远程控制仓库"></a>安装Git用以远程控制仓库</h1><p>进入<a href="https://git-scm.com/">Git官网</a>，点击 <em><strong>Downloads</strong></em> 下载：</p>
-<p><img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811154414977.png" alt="image-20210811154414977"></p>
-<p>根据用户所使用操作系统选择，我选择的是Windows：</p>
-<p><img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811154441928.png" alt="image-20210811154441928"></p>
-<p>点击之后会自动下载，如果没有自动下载请自行选择进行下载：</p>
-<p><img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811154545763.png" alt="image-20210811154545763"></p>
-<p>下载之后双击运行exe程序，选择相应的配置安装即可。</p>
-<p>详细安装步骤可参考链接：<a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">https://www.cnblogs.com/xueweisuoyong/p/11914045.html</a></p>
-<p>安装成功后，选中任意文件夹鼠标右键单击，出现以下情况则安装成功：</p>
-<img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811155107280.png" alt="image-20210811155107280" style="zoom:10%;">
-
-<p>打开Git Bash，输入指令git：</p>
-<p><img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811155514217.png" alt="image-20210811155514217"></p>
-<p>回车获得以下反馈：</p>
-<p><img src="/2021/08/11/Day01-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/image-20210811155552115.png" alt="image-20210811155552115"></p>
-<p>此时你的Git已经安装完成了！</p>
-<h1 id="绑定GitHub并提交文件"><a href="#绑定GitHub并提交文件" class="headerlink" title="绑定GitHub并提交文件"></a>绑定GitHub并提交文件</h1><p>（未完成，待补充~~~~）</p>
-]]></content>
-      <categories>
-        <category>搭建博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
   </entry>
   <entry>
     <title>微信小程序的开发与使用</title>
