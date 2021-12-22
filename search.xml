@@ -88,9 +88,11 @@
 ]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/2021/12/21/js%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>防抖与节流算得上是性能优化的知识，用于处理高频率的业务时，进而防止浏览器的卡死。</p>
+    <title>js防抖与节流</title>
+    <url>/2021/12/22/js%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p> 防抖与节流算得上是性能优化的知识，用于处理高频率的业务时，进而防止浏览器的卡死。</p>
+</blockquote>
 <!---more--->
 
 <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>在前端开发过程中，我们经常会碰到需要绑定一些持续触发的事件，如scroll、mousemove、请求后台ajax 等等，但有些时候我们并不希望在事件持续触发的过程中那么频繁地去执行函数。</p>
@@ -103,7 +105,7 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;script type=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><br><span class="line">        <span class="keyword">let</span> count = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">let</span> area = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;area&#x27;</span>);</span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            area.innerHTML = count++;</span><br><span class="line">            <span class="built_in">console</span>.log(count);</span><br><span class="line">        &#125;;</span><br><span class="line">        area.onmousemove = add;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
 <p>上述代码中div元素绑定了onmousemove事件，鼠标在粉色区域内移动便会调用函数add，将count加一并显示在粉色区域，下图是移动一次后的效果：</p>
-<p><img src="/2021/12/21/js%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/image-20211221234307054.png" alt="image-20211221234307054"></p>
+<p><img src="/2021/12/22/js%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/image-20211221234307054.png" alt="image-20211221234307054"></p>
 <p>可以看出，鼠标移动会高频率的执行函数，页面数据变化非常快。所以，下面来讲解如何利用防抖与节流来解决此种问题。</p>
 <h1 id="防抖（debounce）"><a href="#防抖（debounce）" class="headerlink" title="防抖（debounce）"></a>防抖（debounce）</h1><p><strong>所谓防抖，就是指触发事件后在 n 秒内函数只能执行一次，如果在 n 秒内又触发了事件，则会重新计算函数执行时间。</strong></p>
 <p><strong>效果</strong>：如果短时间内大量触发同一事件，只会执行一次函数。</p>
